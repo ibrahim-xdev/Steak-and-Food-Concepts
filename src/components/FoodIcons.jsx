@@ -1,78 +1,127 @@
-// Minimal flat-style food icons, drawn as plain SVG paths so the
-// hero background has zero image dependencies. Each accepts a
-// `className` for sizing/color via Tailwind (fill-current friendly).
+// Minimal flat-style Hong Kong Cafe food icons, drawn as plain SVG paths.
+// Each accepts a `className` for sizing/color via Tailwind (fill-current friendly).
 
-export function BurgerIcon(props) {
-  return (
-    <svg viewBox="0 0 64 64" fill="none" {...props}>
-      <path d="M8 26c0-9 10.7-16 24-16s24 7 24 16H8z" fill="currentColor" opacity="0.9" />
-      <rect x="6" y="28" width="52" height="6" rx="3" fill="currentColor" opacity="0.7" />
-      <rect x="8" y="37" width="48" height="7" rx="3.5" fill="currentColor" opacity="0.6" />
-      <path
-        d="M6 40c0 3 2 5 4 5h44c2 0 4-2 4-5"
-        stroke="currentColor"
-        strokeWidth="0"
-        fill="currentColor"
-        opacity="0.4"
-      />
-      <rect x="7" y="47" width="50" height="9" rx="4.5" fill="currentColor" />
-    </svg>
-  )
-}
-
-export function FriesIcon(props) {
-  return (
-    <svg viewBox="0 0 64 64" fill="none" {...props}>
-      <path d="M14 26h36l-4 30a4 4 0 0 1-4 3.4H22a4 4 0 0 1-4-3.4z" fill="currentColor" opacity="0.85" />
-      {[20, 27, 34, 41, 48].map((x, i) => (
-        <rect key={i} x={x - 2.5} y={8 + (i % 2) * 4} width="5" height="24" rx="1.5" fill="currentColor" />
-      ))}
-    </svg>
-  )
-}
-
-export function DrinkIcon(props) {
-  return (
-    <svg viewBox="0 0 64 64" fill="none" {...props}>
-      <path d="M18 14h28l-4 42a4 4 0 0 1-4 3.6H26a4 4 0 0 1-4-3.6z" fill="currentColor" opacity="0.85" />
-      <rect x="15" y="9" width="34" height="7" rx="3.5" fill="currentColor" />
-      <rect x="30" y="2" width="4" height="12" rx="2" fill="currentColor" />
-    </svg>
-  )
-}
-
-export function PizzaIcon(props) {
-  return (
-    <svg viewBox="0 0 64 64" fill="none" {...props}>
-      <path d="M32 6 58 56H6z" fill="currentColor" opacity="0.85" />
-      <circle cx="26" cy="34" r="3" fill="currentColor" opacity="0.4" />
-      <circle cx="36" cy="26" r="3" fill="currentColor" opacity="0.4" />
-      <circle cx="30" cy="44" r="3" fill="currentColor" opacity="0.4" />
-      <path d="M4 56h56" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
-    </svg>
-  )
-}
-
-export function ChickenIcon(props) {
+export function SteakIcon(props) {
   return (
     <svg viewBox="0 0 64 64" fill="none" {...props}>
       <path
-        d="M40 8c9 2 14 10 12 19-1.5 7-7 11-13 15l-9 16-8-4 8-15c-4-6-4-13 0-19 4-6 12-14 10-12z"
+        d="M18 12c-8 0-12 6-12 14 0 16 14 26 28 26 12 0 22-8 22-20 0-8-6-14-14-14-4 0-7 2-10 2s-6-8-14-8z"
         fill="currentColor"
         opacity="0.85"
       />
-      <circle cx="42" cy="20" r="4" fill="currentColor" />
+      <circle cx="24" cy="28" r="3" fill="currentColor" opacity="0.4" />
+      <circle cx="40" cy="32" r="4" fill="currentColor" opacity="0.4" />
     </svg>
-  )
+  );
 }
 
-export function FlameIcon(props) {
+export function NoodlesIcon(props) {
   return (
     <svg viewBox="0 0 64 64" fill="none" {...props}>
       <path
-        d="M32 4c4 10-6 12-6 22 0 5 3 8 6 8s6-3 6-7c4 3 8 9 8 16 0 11-9 21-14 21S6 54 6 43c0-9 5-15 9-19-1 4 1 7 3 7 3 0 4-4 3-8-1-6 0-13 11-19z"
+        d="M10 28c0 14 10 24 22 24s22-10 22-24H10z"
         fill="currentColor"
+        opacity="0.85"
+      />
+      <path
+        d="M18 28V14M26 28V10M34 28V12M42 28V16"
+        stroke="currentColor"
+        strokeWidth="3"
+        strokeLinecap="round"
+      />
+      <path d="M8 28h48" stroke="currentColor" strokeWidth="3" />
+    </svg>
+  );
+}
+
+export function TeaIcon(props) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <path
+        d="M14 20h28l-3 32a4 4 0 0 1-4 3.6H21a4 4 0 0 1-4-3.6z"
+        fill="currentColor"
+        opacity="0.85"
+      />
+      <path
+        d="M42 26h6a6 6 0 0 1 0 12h-5"
+        stroke="currentColor"
+        strokeWidth="4"
+        strokeLinecap="round"
+      />
+      <path
+        d="M22 10c0-3 2-4 2-6M30 10c0-3 2-4 2-6"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        opacity="0.6"
       />
     </svg>
-  )
+  );
+}
+
+export function SoupIcon(props) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <path
+        d="M8 26c0 15 11 26 24 26s24-11 24-26H8z"
+        fill="currentColor"
+        opacity="0.85"
+      />
+      <path
+        d="M6 26h52"
+        stroke="currentColor"
+        strokeWidth="4"
+        strokeLinecap="round"
+      />
+      <path
+        d="M24 14c0-3 2-4 2-6M32 14c0-3 2-4 2-6M40 14c0-3 2-4 2-6"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        opacity="0.5"
+      />
+    </svg>
+  );
+}
+
+export function RiceIcon(props) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <path
+        d="M12 32c0 12 9 20 20 20s20-8 20-20H12z"
+        fill="currentColor"
+        opacity="0.85"
+      />
+      <path
+        d="M16 32c0-9 7-14 16-14s16 5 16 14H16z"
+        fill="currentColor"
+        opacity="0.5"
+      />
+      <path
+        d="M40 18l12-10"
+        stroke="currentColor"
+        strokeWidth="3"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+export function MusselIcon(props) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <path
+        d="M12 40C12 22 24 10 38 10c12 0 18 8 18 18 0 14-12 26-26 26-10 0-18-6-18-14z"
+        fill="currentColor"
+        opacity="0.85"
+      />
+      <path
+        d="M18 38c4-10 12-18 22-20"
+        stroke="currentColor"
+        strokeWidth="3"
+        strokeLinecap="round"
+        opacity="0.4"
+      />
+    </svg>
+  );
 }

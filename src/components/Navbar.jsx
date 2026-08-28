@@ -25,7 +25,7 @@ export default function Navbar() {
           href="#top"
           className="font-display text-2xl tracking-wide text-cream-100"
         >
-          AUSO<span className="text-flame-500">MIGOS</span>
+          Steak and<span className="text-flame-500"> Food Concepts</span>
         </a>
 
         <nav className="hidden items-center gap-9 md:flex">

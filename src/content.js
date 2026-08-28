@@ -11,48 +11,48 @@
 // ─────────────────────────────────────────────────────────────
 
 export const shop = {
-  name: "Ausomigos",
-  tagline: "Smash burgers, loaded fries, no shortcuts.",
-  city: "Islamabad",
-  neighborhood: "F-8 Markaz",
-  address: "Shah G Restaurant, F-8 Markaz, F-8, Islamabad, Pakistan",
+  name: "Stack and Food Concepts",
+  tagline: "Cha chaan teng (Hong Kong-style cafe)",
+  city: "Perth",
+  neighborhood: "Bull Creek",
+  address: "9/110 Parry Ave, Bull Creek WA 6149, Australia",
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Ausomigos+F-8+Markaz+Islamabad",
-  phoneDisplay: "+92 312 5126016",
+    "https://www.google.com/maps/place/Steak+and+Food+Concepts/@-32.0604962,115.8608905,1133m/data=!3m1!1e3!4m6!3m5!1s0x2a32bd3758aad2af:0x4aa5353ecab6dc34!8m2!3d-32.056856!4d115.8637563!16s%2Fg%2F11b7fwcqsq?entry=ttu&g_ep=EgoyMDI2MDgyNS4wIKXMDSoASAFQAw%3D%3D",
+  phoneDisplay: "+61893327779",
   // WhatsApp deep link — digits only, country code first, no leading +
   whatsappNumber: "923125126016",
-  whatsappDefaultMessage: "Hi Ausomigos, I'd like to place an order.",
-  rating: 5.0,
-  reviewCount: 2,
-  priceRange: "Rs 9,000 – 10,000 per person",
+  whatsappDefaultMessage:
+    "Hi Steak and Food Concepts, I'd like to place an order.",
+  rating: 4.4,
+  reviewCount: 417,
+  priceRange: "$20 – $40 per person",
   hours: [
-    { day: "Monday", time: "2 PM – 3 AM" },
-    { day: "Tuesday", time: "2 PM – 3 AM" },
-    { day: "Wednesday", time: "2 PM – 3 AM" },
-    { day: "Thursday", time: "2 PM – 3 AM" },
-    { day: "Friday", time: "2 PM – 3 AM" },
-    { day: "Saturday", time: "2 PM – 3 AM" },
-    { day: "Sunday", time: "2 PM – 3 AM" },
+    { day: "Monday", time: "closed" },
+    { day: "Tuesday", time: "11:30 AM - 2:30 PM & 5:30 PM - 9:00 PM" },
+    { day: "Wednesday", time: "11:30 AM - 2:30 PM – 5:30 PM - 9:00 PM" },
+    { day: "Thursday", time: "11:30 AM - 2:30 PM – 5:30 PM - 9:00 PM" },
+    { day: "Friday", time: "11:30 AM - 2:30 PM – 5:30 PM - 9:00 PM" },
+    { day: "Saturday", time: "11:30 AM - 2:30 PM – 5:30 PM - 9:00 PM" },
+    { day: "Sunday", time: "closed" },
   ],
-  services: ["Dine-in", "Drive-through", "No-contact delivery"],
+  services: ["Dine-in", "Takeout", "Onsite services"],
 };
 
 // Words that spin through the hero's animated background strip.
 export const heroWords = [
-  "SMASH BURGERS",
-  "LOADED FRIES",
-  "PANINI",
-  "PASTA",
-  "ALL NIGHT",
-  "F-8 MARKAZ",
+  "Lunch",
+  "Dinner",
+  "Counter service",
+  "Dessert",
+  "Seating",
+  "Table service",
 ];
 
 export const about = {
   eyebrow: "About us",
   heading: "Late-night food, made fresh, no shortcuts.",
   paragraphs: [
-    "Ausomigos runs in F-8 Markaz, serving smash burgers, loaded fries, pasta and paninis from 2 PM straight through to 3 AM. No frozen shortcuts — patties are smashed to order and fries come loaded, not just topped.",
-    "Whether you're stopping in for dine-in, swinging by the drive-through, or ordering no-contact delivery on your way home from a late night out, the menu stays the same tight lineup done right.",
+    "Steak and Food Concepts is an authentic Hong Kong-style café (Cha Chaan Teng) located in Bull Creek, Western Australia, serving comforting, generous classics like sizzling steaks, top-tier fried rice, crispy cutlets, and hot milk tea. Renowned for its friendly, efficient service and vibrant casual atmosphere, it offers an authentic soul-warming dining experience for local food lovers.",
   ],
   stats: [
     { value: "2PM–3AM", label: "Open every day, late-night menu" },
@@ -60,75 +60,123 @@ export const about = {
       value: shop.rating.toFixed(1),
       label: `★ average across ${shop.reviewCount} reviews`,
     },
-    { value: "3", label: "Ways to order — dine-in, drive-thru, delivery" },
+    { value: "3", label: "Ways to order — dine-in, Takeout, Onsite services" },
   ],
 };
 
 export const menu = {
   eyebrow: "The menu",
   heading: "Built around what people actually order",
-  subheading: "Prices in PKR. Ask about combo deals for groups.",
+  subheading: "Prices in AUD. Ask about combo deals for groups.",
   categories: [
     {
-      name: "Smash Burgers",
+      name: "Popular Specialities",
       items: [
         {
-          name: "Classic Smash Beef",
-          note: "Double smashed patty, cheese, house sauce",
-          price: "Rs 950",
+          name: "Sizzling Steak",
+          note: "Tender, juicy cut of beef served hot and sizzling on a classic cast-iron plate",
+          price: "$32.50",
           tag: "Best seller",
           image:
-            "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80",
+            "https://images.unsplash.com/photo-1720701247887-cab418baa6d6?auto=format&fit=crop&w=900&q=80",
         },
         {
-          name: "Ausomigos Signature Burger",
-          note: "Triple patty, caramelized onions, smoked cheddar",
-          price: "Rs 1,350",
+          name: "Beef Fried Ho Fun",
+          note: "Wok-tossed wide rice noodles with tender beef, bean sprouts, and rich soy sauce.",
+          price: "$25.00",
           tag: "Chef's pick",
           image:
-            "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=80",
+            "https://images.unsplash.com/photo-1673258551460-268b47871a32?auto=format&fit=crop&w=900&q=80",
         },
         {
-          name: "Spicy Zinger Smash",
-          note: "Crispy chicken thigh, chili mayo, pickles",
-          price: "Rs 1,050",
-          tag: "Spicy",
+          name: "Beef Brisket Noodles",
+          note: "Slow-braised, melt-in-your-mouth beef brisket served over delicate egg noodles in rich broth",
+          price: "$20.50",
+          tag: "star anise, ginger, and cinnamon",
           image:
-            "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80",
+            "https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=900&q=80",
+        },
+        {
+          name: "Peanut Butter French Toast",
+          note: "Golden, fluffy thick-cut toast stuffed with creamy peanut butter and topped with butter and syrup",
+          price: "$20.00",
+          tag: "Sweet, creamy",
+          image:
+            "https://images.unsplash.com/photo-1745211212207-54b6eadd26c1?auto=format&fit=crop&w=900&q=80",
+        },
+        {
+          name: "Cream of Mushroom Soup",
+          note: "Smooth, savory house-made mushroom soup packed with comforting earthy flavor",
+          price: "$2.00",
+          tag: "Rich and creamy",
+          image:
+            "https://images.unsplash.com/photo-1785961259199-0436f0f877ac?auto=format&fit=crop&w=900&q=80",
         },
       ],
     },
     {
-      name: "Loaded Fries",
+      name: "Mains & Set Meals",
       items: [
         {
-          name: "Loaded Cheese & Beef Fries",
-          note: "Beef strips, molten cheese sauce, jalapeños",
-          price: "Rs 850",
+          name: "Classic Combo with Rice",
+          note: "A generous Hong Kong-style meal set pairing your choice of protein with steamed rice",
+          price: "$18.00",
           tag: "Best seller",
           image:
-            "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=80",
+            "https://images.unsplash.com/photo-1679279726946-a158b8bcaa23?auto=format&fit=crop&w=900&q=80",
         },
         {
-          name: "Peri Peri Loaded Fries",
-          note: "Peri sauce, grilled chicken, garlic mayo drizzle",
-          price: "Rs 800",
-          tag: "Spicy",
+          name: "Chicken Cutlet with Curry",
+          note: "Golden fried chicken cutlet paired with aromatic, flavorful Hong Kong-style curry",
+          price: "$20.00",
+          tag: "savory, crispy",
           image:
-            "https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=900&q=80",
+            "https://images.unsplash.com/photo-1768179669433-bd9d52949c20?auto=format&fit=crop&w=900&q=80",
+        },
+        {
+          name: "Chicken Cutlet with Egg and Chips",
+          note: "Juicy fried chicken served alongside a fried egg and crispy thick-cut fries",
+          price: "$30.00",
+          tag: "savory, salty, and rich with a delicious mix of crispy and tender textures",
+          image:
+            "https://images.unsplash.com/photo-1580217593608-61931cefc821?auto=format&fit=crop&w=900&q=80",
+        },
+        {
+          name: "Baked Seafood in Cream Sauce",
+          note: "Fresh mixed seafood baked to golden perfection under a smooth, velvety cream sauce",
+          price: "$20.00",
+          tag: "rich, savory, and velvety",
+          image:
+            "https://images.unsplash.com/photo-1599206614622-d7dae04bb031?auto=format&fit=crop&w=900&q=80",
+        },
+        {
+          name: "Baked Garlic Mussels",
+          note: "Plump ocean mussels baked with aromatic garlic butter and melted cheese",
+          price: "$7.75",
+          tag: "buttery, savory, and rich",
+          image:
+            "https://images.unsplash.com/photo-1618055301293-494ab4c71f9f?auto=format&fit=crop&w=900&q=80",
+        },
+        {
+          name: "Black Pepper Shredded Beef Crispy Noodles",
+          note: "Tender strips of beef in spicy black pepper sauce over a bed of crunchy fried noodles",
+          price: "$21.75",
+          tag: "savory, crunchy, and peppery",
+          image:
+            "https://images.unsplash.com/photo-1520689656391-66b6dd7f0ec6?auto=format&fit=crop&w=900&q=80",
         },
       ],
     },
     {
-      name: "Pasta & Panini",
+      name: "Drinks & Beverages",
       items: [
         {
-          name: "Creamy Alfredo Pasta",
-          note: "Grilled chicken, parmesan cream sauce",
-          price: "Rs 1,100",
+          name: "Hot / Iced Milk Tea",
+          note: "Smooth, intensely brewed traditional Hong Kong black tea blended with rich condensed milk.",
+          price: "$8.00",
           tag: "Popular",
           image:
-            "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=900&q=80",
+            "https://images.unsplash.com/photo-1620360289473-bfafadc16c57?auto=format&fit=crop&w=900&q=80",
         },
         {
           name: "Smoky BBQ Pasta",
@@ -139,12 +187,12 @@ export const menu = {
             "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=80",
         },
         {
-          name: "Grilled Chicken Panini",
-          note: "Pressed sourdough, mozzarella, basil pesto",
-          price: "Rs 900",
+          name: "Honey Lemon Tea",
+          note: "Refreshing black tea steeped with fresh lemon slices and a touch of sweet honey",
+          price: "$4.00",
           tag: "Popular",
           image:
-            "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=900&q=80",
+            "https://images.unsplash.com/photo-1592099759599-24b131b8e824?auto=format&fit=crop&w=900&q=80",
         },
       ],
     },
@@ -189,17 +237,17 @@ export const gallery = [
 // Real reviews as given from the Google Business listing.
 export const reviews = [
   {
-    name: "Ali Zahid Raja",
-    meta: "Local Guide · 23 reviews · 16 photos · 2 years ago",
+    name: "A1455HHJK3 Asdrftgyjuj",
+    meta: "5 months ago",
     rating: 5,
-    text: "THE BEST PLACE TO EAT IN F10. Try their beef burger, pasta, panini, loaded fries. THE BEST TASTE, THE MOST AFFORDABLE RATES.",
+    text: "You can tell a lot about a cafe by their fried rice, and this is clearly top-tier. Every grain looks perfectly coated, and that side of borscht/stew is the ultimate soul-warming pairing. A classic Hong Kong-style cafe vibe done exactly right..",
   },
   {
-    name: "Saqlain Shaan",
-    meta: "10 months ago",
-    rating: 5,
-    text: null,
-    breakdown: { Food: 5, Service: 5, Atmosphere: 5 },
+    name: "Venus Chui",
+    meta: "8 months ago",
+    rating: 4,
+    text: "Staff are friendly, the environment is clean, and the menu has a wide variety of food and drink options. Dish portions are a good size and delicious. While the hot beverages are served in smaller cups, this is characteristic of Hong Kong teahouses we've ordered milk tea, coffee with tea and Horlicks.",
+    breakdown: { Food: 4, Service: 4, Atmosphere: 3 },
   },
 ];
 

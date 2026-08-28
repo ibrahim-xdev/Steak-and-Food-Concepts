@@ -1,30 +1,100 @@
-import { BurgerIcon, FriesIcon, DrinkIcon, PizzaIcon, ChickenIcon, FlameIcon } from './FoodIcons'
+import {
+  SteakIcon,
+  NoodlesIcon,
+  TeaIcon,
+  SoupIcon,
+  RiceIcon,
+  MusselIcon,
+} from "./FoodIcons";
 
-// Purely CSS/SVG animated background — no video or photo assets
-// required. Layers: a warm radial "grill glow", a slow-drifting
-// field of food icons, animated flame flicker bars along the
-// bottom, and a diagonal grill-grate texture. Everything sits
-// behind the hero copy at low opacity so text stays legible.
+// Purely CSS/SVG animated background — customized for HK-style Cafe menu items.
 const ICONS = [
-  { Icon: BurgerIcon, top: '12%', left: '8%', size: 64, delay: '0s', dur: '7s', rot: '-8deg' },
-  { Icon: FriesIcon, top: '68%', left: '14%', size: 56, delay: '1.2s', dur: '8s', rot: '10deg' },
-  { Icon: DrinkIcon, top: '22%', left: '85%', size: 58, delay: '0.6s', dur: '6.5s', rot: '6deg' },
-  { Icon: PizzaIcon, top: '76%', left: '80%', size: 60, delay: '1.8s', dur: '9s', rot: '-6deg' },
-  { Icon: ChickenIcon, top: '48%', left: '92%', size: 50, delay: '0.3s', dur: '7.5s', rot: '14deg' },
-  { Icon: BurgerIcon, top: '82%', left: '46%', size: 46, delay: '2.1s', dur: '8.5s', rot: '12deg' },
-  { Icon: FriesIcon, top: '8%', left: '52%', size: 44, delay: '1.5s', dur: '6s', rot: '-12deg' },
-  { Icon: DrinkIcon, top: '40%', left: '4%', size: 40, delay: '0.9s', dur: '7s', rot: '-4deg' },
-]
+  {
+    Icon: SteakIcon,
+    top: "12%",
+    left: "8%",
+    size: 64,
+    delay: "0s",
+    dur: "7s",
+    rot: "-8deg",
+  },
+  {
+    Icon: NoodlesIcon,
+    top: "68%",
+    left: "14%",
+    size: 58,
+    delay: "1.2s",
+    dur: "8s",
+    rot: "10deg",
+  },
+  {
+    Icon: TeaIcon,
+    top: "22%",
+    left: "85%",
+    size: 56,
+    delay: "0.6s",
+    dur: "6.5s",
+    rot: "6deg",
+  },
+  {
+    Icon: SoupIcon,
+    top: "76%",
+    left: "80%",
+    size: 60,
+    delay: "1.8s",
+    dur: "9s",
+    rot: "-6deg",
+  },
+  {
+    Icon: RiceIcon,
+    top: "48%",
+    left: "92%",
+    size: 52,
+    delay: "0.3s",
+    dur: "7.5s",
+    rot: "14deg",
+  },
+  {
+    Icon: MusselIcon,
+    top: "82%",
+    left: "46%",
+    size: 48,
+    delay: "2.1s",
+    dur: "8.5s",
+    rot: "12deg",
+  },
+  {
+    Icon: NoodlesIcon,
+    top: "8%",
+    left: "52%",
+    size: 46,
+    delay: "1.5s",
+    dur: "6s",
+    rot: "-12deg",
+  },
+  {
+    Icon: TeaIcon,
+    top: "40%",
+    left: "4%",
+    size: 42,
+    delay: "0.9s",
+    dur: "7s",
+    rot: "-4deg",
+  },
+];
 
 export default function HeroBackground() {
   return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+    <div
+      className="pointer-events-none absolute inset-0 overflow-hidden"
+      aria-hidden="true"
+    >
       {/* grill-grate diagonal texture */}
       <div
         className="absolute inset-0 opacity-[0.07]"
         style={{
           backgroundImage:
-            'repeating-linear-gradient(45deg, #FFF8EC 0px, #FFF8EC 1px, transparent 1px, transparent 26px)',
+            "repeating-linear-gradient(45deg, #FFF8EC 0px, #FFF8EC 1px, transparent 1px, transparent 26px)",
         }}
       />
 
@@ -45,7 +115,7 @@ export default function HeroBackground() {
             height: f.size,
             animationDelay: f.delay,
             animationDuration: f.dur,
-            '--rot': f.rot,
+            "--rot": f.rot,
           }}
         >
           <f.Icon className="h-full w-full" />
@@ -70,5 +140,5 @@ export default function HeroBackground() {
       {/* vignette so foreground text always reads clearly */}
       <div className="absolute inset-0 bg-gradient-to-b from-char-950/40 via-char-950/55 to-char-950" />
     </div>
-  )
+  );
 }
