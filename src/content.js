@@ -254,7 +254,6 @@ export const reviews = [
 export const nav = [
   { label: "Menu", href: "#menu" },
   { label: "About", href: "#about" },
-  { label: "Gallery", href: "#gallery" },
   { label: "Reviews", href: "#reviews" },
   { label: "Visit", href: "#visit" },
 ];
